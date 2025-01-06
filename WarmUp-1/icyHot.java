@@ -16,3 +16,13 @@ public boolean icyHot(int temp1, int temp2) {
     boolean b = temp1 > 0 && temp2 < 100;
     return a || b;
 }
+
+public boolean icyHot(int temp1, int temp2) {
+    if(
+            temp1 < 0 && temp2 > 100
+                    ||temp1 > 0 && temp2 < 100
+    ) {
+        return true;
+    }
+    return false;
+}
