@@ -11,7 +11,5 @@ public List<String> copies3(List<String> strings) {
 }
 
 public List<String> copies3(List<String> strings) {
-    return strings.stream()
-            .map(i -> i + i + i)
-            .collect(Collectors.toList());
+    return strings.stream().map(i -> i + i + i).toList();
 }
