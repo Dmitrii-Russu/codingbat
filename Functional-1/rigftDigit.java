@@ -11,7 +11,5 @@ public List<Integer> rightDigit(List<Integer> nums) {
 }
 
 public List<Integer> rightDigit(List<Integer> nums) {
-    return nums.stream()
-            .map(i -> i % 10)
-            .collect(Collectors.toList());
+    return nums.stream().map(i -> i % 10).toList();
 }
