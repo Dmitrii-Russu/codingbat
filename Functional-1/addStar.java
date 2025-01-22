@@ -11,5 +11,5 @@ public List<String> addStar(List<String> strings) {
 }
 
 public List<String> addStar(List<String> strings) {
-    return strings.stream().map(i -> i + "*").collect(Collectors.toList());
+    return strings.stream().map(i -> i + "*").toList();
 }
