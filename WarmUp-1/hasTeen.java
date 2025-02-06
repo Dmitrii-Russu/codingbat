@@ -1,3 +1,4 @@
+import java.util.stream.IntStream;
 import java.util.function.IntPredicate;
 
 /**
@@ -9,6 +10,11 @@ import java.util.function.IntPredicate;
  * @param c third integer
  * @return true if at least one of the numbers is in the range 13-19, otherwise false
  */
+
+public boolean hasTeen(int a, int b, int c) {
+  
+  return IntStream.of(a, b, c).anyMatch(num -> num >= 13 && num <= 19);
+}
 
 public boolean hasTeen(int a, int b, int c) {
   
