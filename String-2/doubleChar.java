@@ -6,7 +6,6 @@
  */
 
 public String doubleChar(String str) {
-  
   int index = 0;
   String[] chars = str.split("");
   String[] result = new String[chars.length * 2];
