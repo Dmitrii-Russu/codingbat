@@ -8,12 +8,28 @@ import java.util.stream.IntStream
  */
 
 public int countCode(String str) {
+    int count = 0;
+    String[] chars = str.split("");
+    
+    for (int i = 0; i < chars.length - 3; i++) {
+        if (chars[i].equals("c") 
+            && chars[i + 1].equals("o") 
+            && chars[i + 3].equals("e")) {
+            count++;
+        }
+    }
+    return count;
+}
+
+
+public int countCode(String str) {
     return (int) IntStream.range(0, str.length() - 3)
             .filter(i -> str.charAt(i) == 'c' 
                        && str.charAt(i + 1) == 'o' 
                        && str.charAt(i + 3) == 'e')
             .count();
 }
+
 
 public int countCode(String str) {
     int count = 0;
