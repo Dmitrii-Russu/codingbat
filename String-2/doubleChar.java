@@ -6,6 +6,14 @@
  */
 
 public String doubleChar(String str) {
+  String[] chars = str.split("");
+  String[] pairs = new String[chars.length * 2];
+  for(int i = 0; i < pairs.length; i++) {
+      pairs[i] = chars[i / 2];
+    }
+    return String.join("", pairs);
+
+public String doubleChar(String str) {
   int index = 0;
   String[] chars = str.split("");
   String[] result = new String[chars.length * 2];
